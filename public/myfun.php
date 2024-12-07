@@ -76,7 +76,7 @@ function Searchname($Alice,$connect)
 {
 	try {
 
-		$sql = "SELECT * FROM student where gender like '%$Alice%' ";
+		$sql = "SELECT * FROM student where name like '%$Alice%' ";
 		$result = mysqli_query($connect,$sql);
 		if (mysqli_num_rows($result)>0) {
 			echo "<table border='1'>";
