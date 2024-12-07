@@ -46,10 +46,10 @@ catch(Exception $e){
 }
 }
  //GET DATA FROM DB
- function Searchemployee($empname,$connect){
+ function SearchName($name,$connect){
             try{
             
-                $sql = "SELECT * FROM  employee where Emp_Name like '%$empname%' ";
+                $sql = "SELECT * FROM  student where Name like '%$name%' ";
             
             
                 $result = mysqli_query($connect,$sql);
