@@ -10,7 +10,7 @@
 //get the db connection file
 
 require_once 'dbconf.php';//(conf/dbconf.php) (folder/file)
-require_once 'myfunc.php';
+require_once 'myfun.php';
 
 PrintTable ("student",$connect);
 
