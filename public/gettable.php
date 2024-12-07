@@ -12,7 +12,7 @@
 require_once 'dbconf.php';//(conf/dbconf.php) (folder/file)
 require_once 'myfun.php';
 
-PrintTable ("employee",$connect);
+PrintTable ("name",$connect);
 
 //create a search form
 //write a function to search the books
@@ -35,8 +35,8 @@ PrintTable ("employee",$connect);
 </form>
 <?php
 
-if (isset($_GET['empname']) && $_GET['empname'] != '') {
-	Searchemployee($_GET['empname'],$connect);
+if (isset($_GET['name']) && $_GET['name'] != '') {
+	Searchemployee($_GET['name'],$connect);
 }
 
 //Searchemployee('Mark',$connect);
