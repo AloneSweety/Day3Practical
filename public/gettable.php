@@ -12,7 +12,7 @@
 require_once 'dbconf.php';//(conf/dbconf.php) (folder/file)
 require_once 'myfun.php';
 
-PrintTable ("student",$connect);
+//PrintTable ("student",$connect);
 
 //create a search form
 //write a function to search the books
