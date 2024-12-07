@@ -9,7 +9,7 @@
 <body>
 <?php
 require_once 'dbconf.php';
-require_once 'myfunction.php';
+require_once 'myfun.php';
 ?>
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
 		<table>
