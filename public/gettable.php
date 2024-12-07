@@ -12,7 +12,7 @@
 require_once 'dbconf.php';//(conf/dbconf.php) (folder/file)
 require_once 'myfun.php';
 
-PrintTable ("Name",$connect);
+PrintTable ("student",$connect);
 
 //create a search form
 //write a function to search the books
@@ -23,8 +23,8 @@ PrintTable ("Name",$connect);
 <form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "GET">
 	<table >
 		<tr >
-			<td align=right>Emp_Name: </td>
-			<td><input type="text" name="empname"/></td>
+			<td align=right>Name: </td>
+			<td><input type="text" name="name"/></td>
 		</tr>
 		<tr>
 			<td><input type="submit" value="Search"></td>
@@ -36,10 +36,10 @@ PrintTable ("Name",$connect);
 <?php
 
 if (isset($_GET['name']) && $_GET['name'] != '') {
-	Searchemployee($_GET['name'],$connect);
+	SearchName($_GET['name'],$connect);
 }
 
-//Searchemployee('Mark',$connect);
+//SearchName('Alice',$connect);
 ?>
 </body>
 </html>
